@@ -1,0 +1,1 @@
+cordova run android --release -- --keystore="mcmod.keystore" --alias=mcmod --storePassword=zse57b89906x --password=zse57b89906x
