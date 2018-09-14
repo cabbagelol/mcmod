@@ -1,0 +1,74 @@
+body,html {
+  margin: 0;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 5px 0;
+}
+
+.mint-height-10 {
+  height: auto;
+}
+
+.mint-template {
+  position: fixed;
+  box-shadow: 0 0 50px rgb(0,0,0, .2);
+  width: 100%;
+  height: 100%;
+  z-index: 103;
+  top: 0;
+}
+
+.mint-header {
+  background-color: #26a2ff;
+}
+
+.classdiscuss-card-modintroduce img {
+  width: calc(100% + 20px);
+  margin: 5px -10px;
+}
+
+.classdiscuss-card-modintroduce {
+  overflow: auto;
+}
+
+/*ripple*/
+.ripple {
+  position: relative;
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #666 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .3s, opacity .5s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .3;
+  transition: 0s;
+}
+/*ripple*/
+
+/*fade_in*/
+.fade_in {
+  animation: fadeIn 1s both;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; } 100% { opacity: 1; }
+}
+/*fade_in*/
+
